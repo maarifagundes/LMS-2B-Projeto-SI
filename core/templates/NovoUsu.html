@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'conteudo' %}  
+<h2>Criação de um Novo usuário</h2>
+	<form>
+		<label for = "lblnome">Nome completo</label>:<br>
+		<input type= "text" name ="txtNome"><br>
+
+		<label for = "lblTelefone">Telefone</label>:<br>
+		<input type= "text" name ="txtTel"><br>
+		
+		<label for = "lblEmail">E-mail</label>:<br>
+		<input type= "email" name ="txtEmail"><br>
+
+		<input type ="radio" value="SexoM" name="sexo" id="sMas"><label for="sMas">Masculino</label>
+		<input type ="radio" value="SexoF" name="sexo" id="sFem"><label for="sFem">Feminino</label>
+		<input type ="radio" value="SexoI" name="sexo" id="sInd"><label for="sInd">Indefinido</label><br>
+
+		<label for = "lblRa">Numero do RA</label>:<br>
+		<input type= "number" name ="numRa"><br>
+
+		<label>Curso:</label><br>
+		<select name="Cursos">
+			<option>Selecione</option>
+			<option value="SI">Sistemas de informação</option>
+			<option value="Gestao">Gestão</option>
+			<option value="ADS">Análise e desenvolvimento de sistemas</option>
+		</select><br>
+		
+		
+		<label for = "lblData">Data de nascimento</label>:<br>
+		<input type= "date" name ="txtDataNasc"><br>
+		
+		<label for ="lblEnd">Endereço:</label><br>
+		<input type= "text" name ="txtRua"><br>
+
+		<label for ="lblNum">Número:</label><br>
+		<input type= "text" name ="txtNum"><br>
+
+		<label for ="lblCep">CEP:</label><br>
+		<input type= "text" name ="txtCep"><br>
+
+		<label for ="lblCidade">Cidade:</label><br>
+		<input type= "text" name ="txtCidade"><br>	
+
+		<label>Estado:</label><br>
+		<select name="Estado">
+			<option>Selecione</option>
+			<option value="SP">São Paulo</option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="MG">Minas Gerais</option>
+		</select><br>
+
+		<label for = "lblUsu"> Nome de usuario</label>:<br>
+		<input type= "text" name ="txtUsu"><br>
+
+		<label for = "lblSenha"> Senha</label>:<br>
+		<input type= "password" name ="txtSenha"><br>
+
+		<label for = "lblSenhaCon">Confirmar Senha</label>:<br>
+		<input type= "password" name ="txtSenhaCon"><br>
+
+		<button type="submit" value="btnEnviar">Confirmar</button>
+	</form>
+
+{% endblock %}
+	
